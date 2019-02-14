@@ -1,0 +1,9 @@
+<small *ngIf="invalidCreds">{{errorMessage}}</small>
+<p>
+  Login Page
+</p>
+
+USER NAME: <input type="text" name="username" [(ngModel)]="userName">
+PASSWORD: <input type="password" name="password" [(ngModel)]="password">
+<br/>
+<input type="button" name="login" value="Login" (click)=handleLogin()>
