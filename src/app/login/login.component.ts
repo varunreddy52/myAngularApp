@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     // console.log(this.userName)
     this.invalidCreds = (this.userName === 'varun' && this.password === 'reddy') ? false : true;
     if (!this.invalidCreds){
-      this.router.navigate(['welcome']);
+      this.router.navigate(['welcome', this.userName]);
     }
   }
 }
